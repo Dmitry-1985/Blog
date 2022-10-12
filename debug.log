@@ -98,3 +98,4 @@ Traceback (most recent call last):
     raise ValueError(
 ValueError: Missing staticfiles manifest entry for 'css/defult.css'
 2022-10-12 20:28:35,235 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-10-12 21:07:12,530 django.utils.autoreload INFO     Watching for file changes with StatReloader
