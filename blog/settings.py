@@ -151,7 +151,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Настройки Heroku
 django_heroku.settings(locals())
 
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) ) # читает значение, связанное с  
+#DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) ) # читает значение, связанное с  
                 # заданной с заданной переменной среды в любом окружении, в котором
                 # выполняется проект
                 # при передаче на сервер пустой строки значение меняется на False
@@ -162,7 +162,7 @@ options = DATABASES['default'].get('OPTIONS', {})
 options.pop('sslmode', None)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = False
+DEBUG = True
 
 # показывает логги при DEBUG = False
 LOGGING = {
