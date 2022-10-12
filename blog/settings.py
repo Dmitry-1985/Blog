@@ -135,7 +135,7 @@ USE_TZ = True
 
 STATIC_URL = 'static'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'blogs', 'staticfiles') # место от кудова беруться 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # место от кудова беруться 
                                                     #распакованные статические файлы
 
 STATICFILES_DIRS = [Path(BASE_DIR,'blogs', 'static'),
