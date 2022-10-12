@@ -1,0 +1,27 @@
+{% extends 'blogs/base.html' %}
+
+{% block content %}
+<div class="pl-3 bg-body rounded shadow ">
+	<ul class="list-unstyled ">
+		{% for p in post %}
+		<li>
+			<div class="border-bottom pb-2 mb-0 pt-3 "><h6>{{ p }}</h6></div>
+			<div class="d-flex text-muted pt-3">
+				<div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+					<div class="d-flex justify-content-between">
+						<strong class="text-gray-dark border-bottom">{{ p.date_added }}--{{ p.author }}</strong>
+						<a class="pr-3" href="{% url 'blogs:edit_post' p.id %}">edit post</a>
+					</div>
+					<span class="d-block">{{ p.text|capfirst|linebreaks }}</span>
+					{% empty %}				
+					<p>Тем еще нет</p>
+					{% endfor %}
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<small class="d-block text-end mt-3 pb-3 pr-3">
+	<a href="{% url 'blogs:new_post' %}">Add new post</a>
+</small>
+{% endblock content %}

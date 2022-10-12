@@ -1,0 +1,10 @@
+__pycache__
+ll_env
+*.sqlite3'.env' 
+css
+fonts
+img
+js
+admin
+scss
+my_scss

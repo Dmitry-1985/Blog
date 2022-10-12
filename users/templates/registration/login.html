@@ -1,0 +1,25 @@
+{% extends 'blogs/base.html' %}
+{% load bootstrap4 %}
+
+{% block content-1 %}
+&raquo;Введите логин
+{% endblock content-1 %}
+
+{% block content %}
+
+
+<!--{% if form.errors %} проверка формы. атриут errors указывает на наличие ошибки
+<p>Ваш логин или пароль не верен. Повторите попытку!</p>
+{% endif %}-->
+
+  <form method="post" action="{% url 'users:login'%}" class="form font-italic ">
+    {% csrf_token %}
+    <div class="shadow">
+    {% bootstrap_form form %}
+    </div>
+    {% buttons %}
+    <button type="submit" class="btn border border-summer_games summer_games shadow" >Log in</button>
+    {% endbuttons %}
+    <input type="hidden" name="next" value="{% url 'blogs:index' %}"/>
+  </form>
+{% endblock content %}

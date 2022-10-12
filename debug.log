@@ -1,0 +1,100 @@
+2022-10-12 20:15:17,351 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-10-12 20:15:35,115 django.request WARNING  Not Found: /54
+2022-10-12 20:15:35,306 django.request WARNING  Not Found: /favicon.ico
+2022-10-12 20:17:55,006 django.utils.autoreload INFO     G:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\blog\settings.py changed, reloading.
+2022-10-12 20:17:58,459 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-10-12 20:18:41,196 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\blogs\views.py", line 15, in index
+    return render(request, 'blogs/index.html', context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\contrib\staticfiles\storage.py", line 173, in url
+    return self._url(self.stored_name, name, force)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in _url
+    hashed_name = hashed_name_func(*args)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\contrib\staticfiles\storage.py", line 472, in stored_name
+    raise ValueError(
+ValueError: Missing staticfiles manifest entry for 'css/defult.css'
+2022-10-12 20:18:47,097 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\blogs\views.py", line 15, in index
+    return render(request, 'blogs/index.html', context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\contrib\staticfiles\storage.py", line 173, in url
+    return self._url(self.stored_name, name, force)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in _url
+    hashed_name = hashed_name_func(*args)
+  File "g:\hunter_proekt\eric_matthes\data_generation_project2\django\Blog\bl\lib\site-packages\django\contrib\staticfiles\storage.py", line 472, in stored_name
+    raise ValueError(
+ValueError: Missing staticfiles manifest entry for 'css/defult.css'
+2022-10-12 20:28:35,235 django.utils.autoreload INFO     Watching for file changes with StatReloader

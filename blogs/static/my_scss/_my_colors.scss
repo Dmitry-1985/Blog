@@ -1,0 +1,16 @@
+//$blue: #FFFC00; - изменение стандартного цвета(темы)
+//$theme-colors: (
+//	"blue": $blue
+//	) ;
+
+//my colors
+$lime:        #00FF00 !default;
+$springgreen: #00FF7F !default;
+$frrerg:#FB95FF !default;
+
+
+$theme-colors: (
+	"lime": $lime,
+	"springgreen": $springgreen,
+	"frrerg": $frrerg,
+	) !default;

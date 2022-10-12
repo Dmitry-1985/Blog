@@ -1,0 +1,15 @@
+.border-3 {
+    border-width:3px !important; /*толщина обводки*/
+}
+.foo { /*создание внутренней обводки с отступом*/
+    outline: 2px solid #A7A6A3; 
+    outline-offset: -6px; /*регулеровка отступа*/bor
+}
+.fr { /*создание градиента текста*/
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #b393d3, #553c9a);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}

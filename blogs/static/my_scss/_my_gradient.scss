@@ -1,0 +1,33 @@
+//my gradients
+$list1: $springgreen, $lime; 
+
+//создание градиента
+@mixin gradient($direction, $list) {
+	background: -webkit-linear-gradient($direction, $list);
+	background: -moz-linear-gradient($direction, $list);
+	background: -o-linear-gradient($direction, $list);
+	background: linear-gradient($direction, $list);
+}
+//переменная для вызова градиента
+.one {
+  @include gradient(left, $list1);
+}
+
+//$inner-color: $springgreen;
+//$outer-color: $lime
+@mixin gradient-radial($inner-color, $outer-color) {
+  background-image: radial-gradient(circle, $inner-color, $outer-color);
+  background-repeat: no-repeat;
+}
+.l {  
+	@include gradient-radial($springgreen, $lime);
+}
+
+
+@mixin gradient-x($direction, $start-color, $end-color, $start-percent, $end-percent) {
+  background-image: linear-gradient($direction, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+.summer_games {
+	@include gradient-x(to left, #92fe9d, #00c9ff, 0%, 100%);
+	

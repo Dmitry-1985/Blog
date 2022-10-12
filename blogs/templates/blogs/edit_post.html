@@ -1,0 +1,18 @@
+{% extends 'blogs/base.html' %}
+{% load bootstrap4 %}
+
+{% block content-1 %}
+&raquo;{{ post }}
+{% endblock content-1 %}
+
+{% block content %}
+<form action="{% url 'blogs:edit_post' post.id %}" method="POST" class="form font-italic">
+	{% csrf_token %}
+	<div class="shadow">
+	{% bootstrap_form form %}
+	</div>
+	{% buttons %}
+	<button name='submit' class="btn border border-summer_games summer_games shadow">Save edit</button>
+	{% endbuttons %}
+</form>
+{% endblock content %}
